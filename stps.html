@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop</title>
+        <body>
+            <h1 class="title">Click the button to see Bobs shop!</h1>
+            <a href="bobshop.html">
+            <button class="shop">Bobs Shop</button>
+        </a>
+        <style>
+            .title{
+                font-family: fantasy;
+                position: relative;
+                text-align: center;
+                animation: wavy 2s ease-in-out infinite alternate ;
+                
+            }
+
+            @keyframes wavy{
+                0% { transform: rotate(0deg); } /* Start straight */
+                50% { transform: rotate(10deg); } /* Tilt right */
+                100% { transform: rotate(-10deg); } /* Tilt left */
+            }
+
+            .shop{
+                position: relative;
+                border-radius: 10px;
+                border-width: 0px;
+                background-color: rgb(255, 0, 0);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                animation: color 0.55s ease-in-out infinite alternate;
+                left: 655px;
+                font-size: 26px;
+            }
+            .shop:hover{
+                animation: grow2 0.99s ease-in-out forwards;
+                filter: drop-shadow(0 0 10px rgb(17, 0, 255));
+              }
+
+              @keyframes grow2{
+                from{
+                    transform: scale(1);
+                }
+
+                to{
+                    transform: scale(2);
+                }
+              }
+
+
+            
+
+            @keyframes color{
+                0% { background-color: chartreuse;}
+            }
+
+
+
+        </style>
+
+        
+        </body>
+    </head>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Lounge</title>
+        <body>
+            
+            
+            <div class="box"> 
+                <h1 class="title">Hello!</h1>
+                <h4 class="title">Welcome to The Lounge</h4>
+                <h4 class="title">Here you can shop a few things, for robux!!</h4>
+                
+                <a href="stps.html">
+                <button class="knapp">Continue</button>
+            </a>
+            </div>
+
+            <style>
+
+             .box{
+                width: 388px;
+                 height: 300px;
+                 background-color: rgb(120, 120, 120);
+                 border-radius: 9px;
+                 position: relative;
+                 left: 530px;
+                 top: 199px;
+                 animation: grow 1.22s ease-in-out forwards;
+              }
+
+              @keyframes grow{
+                    from{
+                        transform: scale(0,2);
+                    }
+
+                    to{
+                        transform: scale(2);
+                    }
+
+              }
+              
+              .title{
+                font-family:fantasy;
+                position: relative;
+                text-align: center;
+                top: 100px;
+
+              }
+
+              .knapp{
+                border-radius: 10px;
+                border-width: 0px;
+                font-family: fantasy;
+                position: relative;
+                top: -100px;
+                left: 160px;
+              }
+
+              .knapp:hover{
+                animation: grow2 0.99s ease-in-out forwards;
+                filter: drop-shadow(0 0 10px rgb(17, 0, 255));
+              }
+
+              @keyframes grow2{
+                from{
+                    transform: scale(1);
+                }
+
+                to{
+                    transform: scale(2);
+                }
+              }
+
+
+
+
+
+
+            
+
+            </style>
+
+        </body>
+    </head>
+</html>
